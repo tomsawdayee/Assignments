@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+		<div id="main-wrap">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					
+					<h1 id="main-header" class="text-left">Calculator</h1>
+					<div class="mode-container text-left">
+						<label class="radio-inline"><input type="radio" value="standard" name="mode" checked>Standard</label>
+						<label class="radio-inline"><input type="radio" value="scientific" name="mode">Scientific</label>
+						<label class="radio-inline"><input type="radio" value="programmer" name="mode">Programmer</label>
+					</div>
+				
+					<form class="form-inline margin-top-20 text-left">
+					  <div class="form-group">
+						<input type="number" class="form-control" id="input-one" >
+					  </div>
+					  <select class="form-control" id="operations">
+						 
+					  </select>
+					  <div class="form-group">
+						<input type="number" class="form-control" id="input-two" >
+					  </div>
+					  <div class="form-group">
+						= <span id="result"></span>
+					  </div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/models.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$(function () {
+				var calculator = App.Calculator();
+				calculator.init();
+			});
+		</script>
+    </body>
+</html>
