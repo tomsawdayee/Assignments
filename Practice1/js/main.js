@@ -1,13 +1,4 @@
 
-/*
-	----------------- NOTES -----------------
-	
-	* Since data-binding frameworks are not allowed, I've used jQuery event listeners. I decided for now not to use any Observer implementations. I hope thats OK.
-	* Patterns used are Modules\MVVM.
-	* Currently the calculator will calculate only if there are values in both inputs.
-	* Bootstrap is added (CDN)
-*/
-
 
 var App = (function (app, $) {
     "use strict";
